@@ -420,3 +420,43 @@
     flex-basis: 45%;
   }
 }
+
+@media (max-width: 768px) {
+  .factandboxContainer {
+    flex-direction: column;
+  }
+
+  .rover-facts-container {
+    margin-top: 2rem;
+  }
+
+  .rover-fact-indiv {
+    margin-bottom: 2rem;
+  }
+
+  .rover-cta-box {
+    margin-top: 2rem;
+  }
+
+  .rover-action-shot {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .rover-action-quote-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .rover-image-cats {
+    margin-top: 2rem;
+  }
+
+  .rover-123-container {
+    text-align: center;
+  }
+
+  .rover-123-item-container {
+    flex-direction: column;
+  }
+}
