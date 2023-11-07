@@ -1,0 +1,422 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.rover-hp-container {
+  font-family: Arial, sans-serif;
+}
+
+/* Rover Header */
+.rover-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.logo {
+  height: 40px;
+}
+
+.rover-header-left a,
+.rover-header-right a {
+  margin-right: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.rover-header-right a {
+  font-weight: bold;
+}
+
+.nav-bar {
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 160px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.dropdown-content a {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Rover Hero Container */
+.rover-hero-container {
+  text-align: center;
+  padding: 40px 0;
+  /* background-color: #f5f5f5; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.pexels.com/photos/7975966/pexels-photo-7975966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.rover-hero-container h1 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.rover-hero-container p {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.rover-cta,
+.rover-cta-mobile {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff3366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.rover-cta:hover,
+.rover-cta-mobile:hover {
+  background-color: #cc0044;
+}
+
+.rover-cta-mobile {
+  display: none;
+}
+
+/* Rover Facts Container */
+.rover-middle-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.rover-middle-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.rover-mobile-hero-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.rover-mobile-hero {
+  width: 50%;
+  margin: 0 10px;
+  height: 90%;
+  cursor: pointer;
+}
+
+/* Rover Fact Indiv */
+.factandboxContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.rover-facts-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 40px 0;
+}
+
+.rover-fact-indiv {
+  flex-basis: 30%;
+  margin-bottom: 30px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rover-fact-indiv img {
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.rover-fact-indiv h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.rover-fact-indiv p {
+  color: #777;
+}
+
+/* Rover CTA Box */
+.rover-cta-box {
+  text-align: justify;
+  padding: 40px 0;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5;
+}
+
+.rover-cta-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.rover-cta-header img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.rover-cta {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff3366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.rover-cta:hover {
+  background-color: #cc0044;
+}
+
+/* rover-action-shot */
+.rover-action-shot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rover-action-quote-container {
+  display: flex;
+  justify-content: center;
+}
+.rover-action-quote {
+  /* background-color: #ffff; */
+  border-radius: 1rem;
+  max-width: 90%;
+  height: 50vh;
+  line-height: 2;
+  font-size: 1.2rem;
+  /* box-shadow: 0px 0px 2px black; */
+}
+.rover-action-quote-container p {
+  text-align: justify;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  height: 20vh;
+}
+.rover-action-shot img {
+  width: 60vw;
+  height: 100vh;
+}
+.rover-action-dash {
+  color: #00bd70;
+}
+/* Rover Footer */
+.rover-123-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  line-height: 2;
+}
+.rover-footer-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+.rover-123-item-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 60vh;
+}
+.rover-footer-container p {
+  color: #777;
+}
+
+.rover-footer-container a {
+  color: #333;
+  text-decoration: none;
+}
+
+.rover-footer-container a:hover {
+  text-decoration: underline;
+}
+.rover-footer {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0px 0px 1px black;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .rover-header-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .rover-header-left,
+  .rover-header-right {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .rover-header-left a,
+  .rover-header-right a {
+    margin-right: 0;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .rover-hero-container {
+    height: 100vh;
+  }
+
+  .rover-hero-container h1 {
+    font-size: 24px;
+  }
+
+  .rover-hero-container p {
+    font-size: 14px;
+  }
+
+  .rover-cta {
+    display: none;
+  }
+
+  .rover-cta-mobile {
+    display: inline-block;
+  }
+}
+
+/* Media Queries */
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  /* Rover Header */
+  .rover-header-container {
+    flex-wrap: wrap;
+  }
+
+  .rover-header-left {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+
+  .rover-header-right {
+    flex-basis: 100%;
+    text-align: center;
+    order: -1;
+  }
+
+  .nav-bar {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    min-width: 140px;
+  }
+
+  .rover-header-right a {
+    margin-right: 10px;
+  }
+
+  /* Rover Hero Container */
+  .rover-hero-container {
+    padding: 20px 0;
+    height: auto;
+  }
+
+  .rover-hero-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .rover-hero-container p {
+    margin-bottom: 10px;
+  }
+
+  .rover-cta {
+    display: none;
+  }
+
+  .rover-cta-mobile {
+    display: inline-block;
+  }
+
+  /* Rover Facts Container */
+  .rover-middle-section {
+    padding: 20px 0;
+  }
+
+  .rover-facts-container {
+    justify-content: center;
+  }
+
+  .rover-fact-indiv {
+    flex-basis: 45%;
+  }
+}
